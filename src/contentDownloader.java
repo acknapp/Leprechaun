@@ -29,13 +29,12 @@ public class contentDownloader {
 				fileOutputStream.write(b, 0, byteLength);
 			}
 			
-			System.out.println("Downloaded content at " + imageURL);
 			siteImageStream.close();
 			fileOutputStream.close();
 			
 		} catch (IOException e) {
-			System.out.println(imageURL + " is not a valid URL");
-			e.printStackTrace();
+			errorLog el = new errorLog();
+			el.writeLog(imageURL + " is not a valid URL");
 		}
 	}
 }

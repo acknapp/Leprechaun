@@ -3,5 +3,4 @@ Leprechaun
 
 A Web Content Downloading Application
 
-Requires JSOUP in the root directory: http://jsoup.org
-=======
+<p> Requires <a href="http://jsoup.org">JSOUP</a> in the root directory to run.

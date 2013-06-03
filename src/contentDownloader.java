@@ -14,7 +14,8 @@ public class contentDownloader {
 	public contentDownloader(){
 		
 	}
-	/*
+	
+	/**
 	 * @param link
 	 * Saves the content of a link to a file on a system. 
 	 */

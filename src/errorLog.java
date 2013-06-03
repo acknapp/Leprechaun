@@ -1,13 +1,14 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
 /**
  * Logging mechanism for errors
  * @author Andrew Knapp
  *
  */
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class errorLog {
 	
 	private File f;

@@ -14,10 +14,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class leprechaunView implements ActionListener{
+public class Leprechaun implements ActionListener{
 
 	public static void main(String[] args) {
-		leprechaunView window = new leprechaunView();
+		@SuppressWarnings("unused")
+		Leprechaun window = new Leprechaun();
 	}
 	
 	private JFrame frame;
@@ -26,7 +27,7 @@ public class leprechaunView implements ActionListener{
 	private JButton crawlButton;
 	private JLabel leprechaunLabel; //DEBUG
 	
-	public leprechaunView (){
+	public Leprechaun (){
 		//Components
 		urlField = new JTextField(10);
 		hops = new JTextField(2);
@@ -64,6 +65,7 @@ public class leprechaunView implements ActionListener{
 			String rootURL = urlField.getText();
 			String linkDepth = hops.getText();
 			int depth = Integer.parseInt(linkDepth);
+			@SuppressWarnings("unused")
 			pageDescent p = new pageDescent(rootURL, depth);
 		} catch (NumberFormatException n) {
 			leprechaunLabel.setText("Link Hops needs a number");

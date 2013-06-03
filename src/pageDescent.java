@@ -21,7 +21,7 @@ public class pageDescent {
 	 */
 	public pageDescent(String initalURL, int maxHops){
 		fileTypes = populateSet(setContents);
-		downloadDirectory = ".";
+		setDownloadDirectory(".");
 		descendPages(initalURL, maxHops);
 	}
 	
@@ -72,6 +72,14 @@ public class pageDescent {
 			fileTypes.add(item);
 		}
 		return fileTypes;
+	}
+
+	public static void setDownloadDirectory(String downloadDirectory) {
+		pageDescent.downloadDirectory = downloadDirectory;
+	}
+
+	public static String getDownloadDirectory() {
+		return downloadDirectory;
 	}
 }
 

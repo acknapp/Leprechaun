@@ -4,4 +4,4 @@
 A Web Content Downloading Application
 
 ### Requirements 
-* [jsoup] (http://jsoup.org)
+* [jsoup](http://jsoup.org)
